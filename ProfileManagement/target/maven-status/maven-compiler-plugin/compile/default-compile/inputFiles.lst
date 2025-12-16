@@ -1,0 +1,11 @@
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/CreditDTO/CreditDTO.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/GeekText.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/config/SecurityConfig.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/controller/CreditController.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/controller/UserController.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/entity/CreditCard.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/entity/User.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/repository/CCRepository.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/repository/UserRepository.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/service/CreditCardService.java
+/Users/josuequinonez/Desktop/ProfileManagement/src/main/java/dev/example/demo/service/UserService.java

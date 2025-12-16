@@ -1,0 +1,10 @@
+package dev.example.demo;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GeekText {
+    public static void main(String[]args){
+        SpringApplication.run(GeekText.class, args);
+    }
+}
