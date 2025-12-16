@@ -1,9 +1,0 @@
-IMPORTANT:
-================================================
-Go to Francine's folder and download the entire front end folder. Even though I only touched the back-end side, you still need to download the front-end folder from her branch. Download the
-rest of the back-end folder that contains those other components too (specifically node_modules ONLY).
-================================================
-In the back-end folder, run the following: npm run dev.
-Front-end folder, run: npm run dev
-Keyboard shortcut to exit terminal once you're done testing: CTRL + C (if you're on Mac, you still press CTRL + C. NOT CMD + C).
-==================================================
