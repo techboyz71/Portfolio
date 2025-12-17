@@ -1,0 +1,15 @@
+Edited src/assets/iconsConstants.tsx to:
+Use Vite's import.meta.glob to eagerly load asset URLs from src/assets/icons/**.
+Export a default icons object mapping filename (without extension) -> URL.
+Export getIcon(name) helper returning the URL or undefined.
+How to use
+
+Put icons in src/assets/icons/ (any extension, nested folders allowed).
+
+Import the map:
+import icons from './assets/iconsConstants';
+const url = icons['my-icon']; // URL string
+
+Or use helper:
+import { getIcon } from './assets/iconsConstants';
+const url = getIcon('my-icon');

@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+/* Tailwind v4 Custom Theme Configuration */
+@theme {
+  /* Primary color scale based on #2B3A67 */
+  --color-primary-50: #f0f4f8;
+  --color-primary-100: #d9e6f2;
+  --color-primary-200: #b3cde0;
+  --color-primary-300: #8db4ce;
+  --color-primary-400: #679bbc;
+  --color-primary-500: #2B3A67;
+  --color-primary-600: #1f2d4d;
+  --color-primary-700: #162033;
+  --color-primary-800: #0d131a;
+  --color-primary-900: #040608;
+  --color-primary-950: #020304;
+
+  /* Secondary color scale based on #496A81 */
+  --color-secondary-50: #f2f6f8;
+  --color-secondary-100: #e0eaf0;
+  --color-secondary-200: #c1d5e1;
+  --color-secondary-300: #a2c0d2;
+  --color-secondary-400: #83abc3;
+  --color-secondary-500: #496A81;
+  --color-secondary-600: #3a5567;
+  --color-secondary-700: #2b404d;
+  --color-secondary-800: #1c2a33;
+  --color-secondary-900: #0e1519;
+  --color-secondary-950: #070a0c;
+
+  /* Accent color scale based on #B38D97 */
+  --color-accent-50: #faf8f9;
+  --color-accent-100: #f0e9ec;
+  --color-accent-200: #e1d3d9;
+  --color-accent-300: #d2bdc6;
+  --color-accent-400: #c3a7b3;
+  --color-accent-500: #B38D97;
+  --color-accent-600: #8f7179;
+  --color-accent-700: #6b555b;
+  --color-accent-800: #47383c;
+  --color-accent-900: #241c1e;
+  --color-accent-950: #120e0f;
+
+  /* Container color scale based on #66999B */
+  --color-container-50: #f0f7f7;
+  --color-container-100: #d9eeef;
+  --color-container-200: #b3dddf;
+  --color-container-300: #8dccce;
+  --color-container-400: #67bbbd;
+  --color-container-500: #66999B;
+  --color-container-600: #527a7c;
+  --color-container-700: #3e5b5d;
+  --color-container-800: #293d3e;
+  --color-container-900: #151e1f;
+  --color-container-950: #0a0f10;
+
+  /* App-specific semantic colors from GlobalColors.tsx */
+  --color-app-background: #F9ECCC;
+  --color-app-surface: #FFFFFF;
+  --color-app-container: #66999B;
+  --color-text-primary: #2B3A67;
+  --color-text-secondary: #496A81;
+  --color-app-accent: #B38D97;
+  --color-app-muted: #496A81;
+
+  /* Button colors */
+  --color-btn-primary: #2B3A67;
+  --color-btn-primary-text: #FFFFFF;
+  --color-btn-secondary: #496A81;
+  --color-btn-secondary-text: #FFFFFF;
+  --color-btn-tertiary: #66999B;
+  --color-btn-tertiary-text: #FFFFFF;
+
+  /* Soft palette alternative */
+  --color-soft-background: #FFFFFF;
+  --color-soft-surface: #F9ECCC;
+  --color-soft-container: #B38D97;
+  --color-soft-accent: #66999B;
+  --color-soft-btn-primary: #66999B;
+  --color-soft-btn-secondary: #B38D97;
+  --color-soft-btn-tertiary: #2B3A67;
+
+  /* Font family */
+  --font-family-nunito: 'NunitoLocal', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Custom shadows */
+  --shadow-app: 0 4px 6px rgba(85, 0, 0, 0.56);
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-soft: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@layer components {
+  .dashboard-page {
+    @apply min-h-screen bg-app-background;
+  }
+  
+  .card {
+    @apply bg-app-surface border border-container-200 rounded-2xl p-6 shadow-card;
+  }
+  
+  .btn-primary {
+    @apply bg-btn-primary text-btn-primary-text px-6 py-3 rounded-full font-medium hover:bg-primary-600 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-btn-secondary text-btn-secondary-text px-6 py-3 rounded-full font-medium hover:bg-secondary-600 transition-colors;
+  }
+  
+  .btn-tertiary {
+    @apply bg-btn-tertiary text-btn-tertiary-text px-6 py-3 rounded-full font-medium hover:bg-container-600 transition-colors;
+  }
+  
+  /* InputField Component Styles */
+  .input-field-container {
+    @apply block w-full;
+  }
+  
+  .input-field-header {
+    @apply flex items-center justify-between;
+  }
+  
+  .input-field-label {
+    @apply block text-sm/6 font-medium text-primary-200;
+  }
+  
+  .forgot-password-container {
+    @apply text-sm;
+  }
+  
+  .forgot-password-link {
+    @apply font-semibold text-container-200 hover:text-container-100 transition-colors;
+  }
+  
+  .input-wrapper {
+    @apply block;
+  }
+  
+  .input-wrapper--with-label {
+    @apply mt-2;
+  }
+  
+  .input-field {
+    @apply block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6;
+  }
+
+  /* ButtonComponent Styles */
+  .button-component {
+    @apply flex justify-center items-center rounded-md font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2;
+  }
+
+  /* Button Size Variants */
+  .button-small {
+    @apply py-1.5 px-3 text-sm;
+  }
+
+  .button-medium {
+    @apply py-2 px-6 text-base;
+  }
+
+  .button-large {
+    @apply py-3 px-8 text-lg;
+  }
+
+  /* Button Width Variants */
+  .button-auto-width {
+    @apply w-auto;
+  }
+
+  .button-full-width {
+    @apply w-full;
+  }
+
+  /* Button Color Variants - Primary (default) */
+  .button-component {
+    @apply bg-btn-primary text-btn-primary-text hover:bg-primary-600 focus-visible:outline-primary-500;
+  }
+
+  /* Button Color Variants - Secondary */
+  .button-secondary {
+    @apply bg-btn-secondary text-btn-secondary-text hover:bg-secondary-600 focus-visible:outline-secondary-500;
+  }
+
+  /* Button Color Variants - Tertiary */
+  .button-tertiary {
+    @apply bg-btn-tertiary text-btn-tertiary-text hover:bg-container-600 focus-visible:outline-container-500;
+  }
+
+  /* Button Disabled State */
+  .button-component:disabled {
+    @apply opacity-50 cursor-not-allowed hover:bg-btn-primary;
+  }
+
+  .prescription-builder-form input {
+  color: black !important;
+  }
+
+
+}
