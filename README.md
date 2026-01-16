@@ -10,7 +10,7 @@ out!
 
 **Education**
 - Bachelor of Science in Computer Science               Jun 2022 - Dec 2025
-- Master of Science in Computer Science (incoming)      Jan 2026 -
+- Master of Science in Computer Science                 Jan 2026 -
 
 **Projects**
 - GeekText API: Profile Management feature
